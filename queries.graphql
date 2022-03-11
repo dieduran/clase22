@@ -1,0 +1,21 @@
+#---------------------
+# CONSULTAS MIAS PARA GRAPIQL
+#---------------------
+
+query {
+  getProductos {
+    nombre
+    precio
+    foto
+  }
+}
+
+mutation {
+  createProducto(datos: {
+    nombre: "OtroProductoXGraphQL",
+    precio: 42,
+    foto: "https://dc722jrlp2zu8.cloudfront.net/media/fbads-graphql.jpg"
+  }) {
+    id
+  }
+}
